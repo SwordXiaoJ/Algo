@@ -1,4 +1,4 @@
-Day1 | LC704, LC 27 (LC34,LC35)、
+Day1 | LC704, LC 27 (LC34,LC35,LC69,LC367)、
 
 数组理论基础：
 	已经学习过基本知识，此处仅记录一些关键点：
@@ -123,7 +123,64 @@ return slow; //slow是新数组的大小
 
 ​		
 
+Additional:
 
+LC35:
+
+​	[Search Insert Position](https://leetcode.com/problems/search-insert-position/)
+
+​	看到有序数组，可以考虑使用二分法
+
+
+
+LC34:
+
+​	[Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+
+1. **return的结果是vector<int>的时候，可以这么构造返回结果**
+
+​	   return {1,2}  或者 return vector<int>{1,2}
+
+​           这样比vector<int> result;  result.push_back(1); 速度快而且占用空间小。
+
+   2. **vector的初始化方法**
+
+      - vector<int> result; 空的
+      - vector<int> result(10);  大小为10，默认值为0
+      - vector<int> result(10,5);  大小为10，默认值为5
+      - vector<int> result = {1,2,3,4,5}; C++11特性
+
+   3. 本题主要还是利用二分法，主要注意的是因为不具有唯一性，所以需要考虑你需要的是左边界还是右边界。如果需要左边界，需要在**相等的情况下持续收缩右边界**，使得寻找的值无限逼近于左边界。反之亦然。
+
+      
+
+      
+
+LC69:
+
+​	[Sqrt(x)](https://leetcode.com/problems/sqrtx/description/)
+
+ 	1. 这道题和LC367类似，但是注意他需要输出最后的最近的整数值。所以在小于的情况下，要去判断下一个整数值是否是大于target的，如果是，直接存储答案并返回。如果不是，再update左边界。
+
+
+
+LC367:
+
+​	[Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/)
+
+ 1. 第一眼看过去不像是二分查找，因为不存在要找的target。但是仔细考虑，要找的target就是target ^ 2 <= num的最大值。
+
+    
+
+ 2. 暴力解法就是遍历，但是注意**i * i ，当i是INT_MAX的时候，会溢出，所以需要改为(long long) i * i.** 但是时间会超时
+
+
+
+
+
+
+
+​       
 
 
 
