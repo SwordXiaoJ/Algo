@@ -9,7 +9,7 @@ Day1 | LC704, LC 27 (LC34,LC35)、
 
 3. C++中二维数组的地址连续，Java因为不对程序员暴露元素地址，所以地址不连续。
 
-   ![image-20231226101404707](C:\Users\SwordXiao\Desktop\ng\assets\blog_res\Day1.assets\image-20231226101404707.png)
+   
 
 LC704
 
