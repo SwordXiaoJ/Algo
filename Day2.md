@@ -70,9 +70,47 @@ LC59
 
 
 
+Additional:
 
+LC885
+
+​	题目链接 [Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/)
+
+​	解题思路：
+
+​		本题仍然是模拟，主要是观察规律，观察到规律是移动步数依次为1122334455，就是每移动两次相同的步数，就会给移动步数+1。而且移动的方向以此是右，下，左，上。
+
+​	总结：
+​		学会在模拟中，新建二维数组来表示方向。
+
+```C++
+ vector<vector<int>> directions = {{0,1},{1,0},{0,-1},{-1,0}};
+        //右，下，左，上
+```
 
 ​       
+
+在数组中，如果结果初始化为
+
+`vector<vector<int>> result`;
+
+则使用
+
+`result.push_back({1,2});`
+
+添加元素
+
+
+
+如果初始化为
+
+`vector<vector<int>> result(4,vector<int>(4,0))`;
+
+则使用
+
+`result[0][0] = 1;`
+
+添加元素
 
 
 
