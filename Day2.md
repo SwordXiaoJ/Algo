@@ -4,7 +4,7 @@ Day2 | LC977,LC209,LC59
 
 LC977
 
-​	题目链接 [[Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)](https://leetcode.com/problems/binary-search/)
+​	题目链接 [[Squares of a Sorted Array]](https://leetcode.com/problems/binary-search/)
 
 ​	解题思路 
 
@@ -54,7 +54,7 @@ LC209
 
 LC59
 
-​	题目链接 Spiral Matrix II](https://leetcode.com/problems/minimum-size-subarray-sum/)
+​	题目链接 [Spiral Matrix II](https://leetcode.com/problems/minimum-size-subarray-sum/)
 
 ​	解题思路 
 
