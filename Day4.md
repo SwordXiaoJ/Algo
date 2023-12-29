@@ -98,4 +98,10 @@ LC142
 
      因为fast是走两步，slow是走一步，**其实相对于slow来说，fast是一个节点一个节点的靠近slow的**，所以fast一定可以和slow重合。 如果快指针一次走三步，相对于满指针走两步。则有可能跳过慢指针。
 
+     (2) 找到环的入口处
+
+     https://github.com/SwordXiaoJ/Algo/blob/main/images/Linked%20List%20Cycle%20II.png
+
+     ​	假设
+
      
