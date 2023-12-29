@@ -100,8 +100,44 @@ LC142
 
      (2) 找到环的入口处
 
-     ![Circle](https://github.com/SwordXiaoJ/Algo/blob/main/images/Linked%20List%20Cycle%20II.png)
+     ![image](https://github.com/SwordXiaoJ/Algo/blob/main/images/Linked%20List%20Cycle%20II.png)
 
-     ​	假设
+     ​	所以在相遇时，slow = x + y.  fast = x + y + n(y + z) 表示fast已经在环中走了n圈
 
+     ​	如图，我们可以得到以下等式：
+     
+     ​		
+     $$
+     2(x+y) = x + y + n(y+z)
+     $$
+        
+     $$
+     x = (n-1)(y+z) + z
+     $$
+      
+     
+     因为时间相同，fast的速度是slow的两倍，所以最后的距离也是slow的两倍。
+     
+     此处可以观察到n 一定 是大于等于1的
+     
+     如果n = 1，可以得到 x= z .
+     
+     这就意味着，**从头结点出发一个指针，从相遇节点 也出发一个指针，这两个指针每次只走一个节点， 那么当这两个指针相遇的时候就是 环形入口的节点**。
+     
+     也就是在相遇节点处，定义一个指针index1，在头结点处定一个指针index2。
+     
+     让index1和index2同时移动，每次移动一个节点， 那么他们相遇的地方就是 环形入口的节点。
+     
+     
+     
+     n>1的时候，就是fast指针在环形转n圈之后才遇到 slow指针。一样可以通过这个方法找到 环形的入口节点，只不过，index1 指针在环里 多转了(n-1)圈。
+     
+     
+     
+     Notes:
+     
+     为什么第一次在环中相遇的时候，slow的步数一定是x+y而不是x+y+n个环的长度
+     
+     
+     
      
