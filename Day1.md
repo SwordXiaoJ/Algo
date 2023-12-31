@@ -141,7 +141,9 @@ LC34:
 
 ​	   return {1,2}  或者 return vector<int>{1,2}
 
-​           这样比vector<int> result;  result.push_back(1); 速度快而且占用空间小。
+​           这样比vector<int> result;  result.push_back(1); 速度快而且占用空间小。\
+
+​	   也可以vector<int> result(2,0); result[0] = 1; result[1] = 2;
 
    2. **vector的初始化方法**
 
