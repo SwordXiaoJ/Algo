@@ -135,8 +135,8 @@ for (std::map<int, std::string>::iterator it = myMap.begin(); it != myMap.end();
 
   	
 
-	2. find()对应的判断条件是set.find() != set.end()
-	2. Map的插入方式
+2. find()对应的判断条件是set.find() != set.end()
+2. Map的插入方式
 
 ```C++
 numsMap.insert(pair<int,int>(nums[i],i));
