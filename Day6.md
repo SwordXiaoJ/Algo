@@ -32,7 +32,9 @@ Day6 | LC242,LC349,LC202,LC1
 
 
 
+set,map使用Insert函数插入元素。map也可以使用[]下标的形式。insert将返回一对值，包含一个迭代器和一个布尔值。
 
+vector,deque等动态数组容器，使用push_back()添加元素。
 
 
 
