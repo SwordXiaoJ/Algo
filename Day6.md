@@ -101,7 +101,7 @@ LC1
 
 ```C++
 1. 
-    for (std::unordered_set<int>::const_iterator it = mySet.cbegin(); it != mySet.cend(); ++it) {
+    for (std::unordered_set<int>::iterator it = mySet.begin(); it != mySet.end(); ++it) {
     std::cout << *it << " ";
 }
 

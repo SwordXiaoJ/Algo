@@ -36,6 +36,8 @@ LC20
      myMap.insert({2, "two"});
      myMap.insert({3, "three"});
      
+     std::map<int, std::string> myMap;
+     myMap.insert(pair<int,std::string>(1,"one"));
      ```
 
      
