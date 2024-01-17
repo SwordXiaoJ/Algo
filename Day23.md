@@ -1,4 +1,4 @@
-Day 22 LC669,LC108,LC538
+Day 23 LC669,LC108,LC538
 
 
 
@@ -46,8 +46,8 @@ LC669
 
        左子树的修剪过程：
 
-     	1. node的左子树为空，不需要修建。
-      	2. node的左子树非空
+          	1. node的左子树为空，不需要修建。
+          2. node的左子树非空
           	1. 如果它的node->left的值小于low，那么node->left和它的左子树都不符合要求，设置node->left = node->left-right。然后再重新去判断并修剪node->left.
           	2. 如果node->left的值大于等于low,又因为node的值此时满足条件，所以node->left->right一定满足条件，此时node = node->left,然后重新对node的左子树进行判断与修剪。
 
